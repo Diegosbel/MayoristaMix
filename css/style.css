@@ -27,7 +27,7 @@ a {
 
 
 .header {
-    background-color: black;
+    background-color: #000000;
     width: 100%;
     height: 100%;
     padding: 5% 0%;
@@ -35,14 +35,14 @@ a {
 
 
 .header h1 {
-    color: white;
+    color: #ffffff;
     font-family: baloo;
     font-size: 100px;
     text-align: center;
 }
 
 .header p {
-    color: white;
+    color: #ffffff;
     font-family: roboto;
     font-size: 45px;
     text-align: center;
@@ -112,7 +112,7 @@ ul {
 
 .suscripcion h3 {
     width: 100%;
-    background-color: orange;
+    background-color: #ffa500;
     font-family: baloo;
     font-size: 30px;
     text-align: center;
@@ -138,7 +138,7 @@ ul {
     width: 100%;
     height: 80%;
     background-color: #c13131;
-    color: white;
+    color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -160,7 +160,7 @@ ul {
 }
 
 .banner__button button {
-    background-color: wheat;
+    background-color: #f5deb3;
     font-family: roboto;
     font-size: 20px;
     padding: 5px;
@@ -177,7 +177,7 @@ ul {
     justify-content: space-around;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #000000;
 }
 
 .footer__redes {
@@ -307,6 +307,20 @@ ul {
     border-radius: 5px;
 }
 
+/*OFERTAS*/
+
+.row{
+    width: 30%;
+    height: 100%;
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+
+.card img {
+    width: 100%;
+}
+
 
 /*SOBRE NOSOTROS*/
 
@@ -399,7 +413,7 @@ ul {
 @media only screen and (min-width: 320px) {
 
     .header {
-        background-color: black;
+        background-color: #000000;
         width: 100%;
         height: 25vh;
         padding-top: 15%;
@@ -485,7 +499,7 @@ ul {
     .suscripcion h3 {
         width: 100%;
         height: 100px;
-        background-color: orange;
+        background-color: #ffa500;
         font-family: baloo;
         font-size: 22px;
         text-align: center;
@@ -531,7 +545,7 @@ ul {
     }
 
     .banner__button button {
-        background-color: wheat;
+        background-color: #f5deb3;
         font-family: roboto;
         font-size: 20px;
         padding: 5px;
@@ -545,7 +559,7 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: start;
-        background-color: black;
+        background-color: #000000;
     }
 
     .footer__redes {
@@ -723,7 +737,7 @@ ul {
         width: 100%;
         height: 100%;
         background-color: #c13131;
-        color: white;
+        color: #ffffff;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -737,7 +751,7 @@ ul {
 @media only screen and (min-width: 480px) {
 
     .header {
-        background-color: black;
+        background-color: #000000;
         width: 100%;
         height: 100%;
         padding: 5%;
@@ -745,14 +759,14 @@ ul {
 
 
     .header h1 {
-        color: white;
+        color: #ffffff;
         font-family: baloo;
         font-size: 60px;
         text-align: center;
     }
 
     .header p {
-        color: white;
+        color: #ffffff;
         font-family: roboto;
         font-size: 30px;
         text-align: center;
@@ -824,7 +838,7 @@ ul {
 
     .suscripcion h3 {
         width: 100%;
-        background-color: orange;
+        background-color: #ffa500;
         font-family: baloo;
         font-size: 26px;
         text-align: center;
@@ -851,7 +865,7 @@ ul {
         width: 100%;
         height: 80%;
         background-color: #c13131;
-        color: white;
+        color: #ffffff;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -873,7 +887,7 @@ ul {
     }
 
     .banner__button button {
-        background-color: wheat;
+        background-color: #f5deb3;
         font-family: roboto;
         font-size: 20px;
         padding: 5px;
@@ -889,7 +903,7 @@ ul {
         flex-direction: column;
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: #000000;
     }
 
     .footer__redes {
@@ -1072,21 +1086,21 @@ ul {
 @media only screen and (min-width: 600px) {
 
     .header {
-        background-color: black;
+        background-color: #000000;
         width: 100%;
         height: 100%;
     }
 
 
     .header h1 {
-        color: white;
+        color: #ffffff;
         font-family: baloo;
         font-size: 85px;
         text-align: center;
     }
 
     .header p {
-        color: white;
+        color: #ffffff;
         font-family: roboto;
         font-size: 35px;
         text-align: center;
@@ -1157,7 +1171,7 @@ ul {
     .suscripcion h3 {
         width: 100%;
         height: 100%;
-        background-color: orange;
+        background-color: #ffa500;
         font-family: baloo;
         font-size: 25px;
         text-align: center;
@@ -1183,7 +1197,7 @@ ul {
         width: 100%;
         height: 80%;
         background-color: #c13131;
-        color: white;
+        color: #ffffff;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -1205,7 +1219,7 @@ ul {
     }
 
     .banner__button button {
-        background-color: wheat;
+        background-color: #f5deb3;
         font-family: roboto;
         font-size: 20px;
         padding: 5px;
@@ -1221,7 +1235,7 @@ ul {
         flex-direction: column;
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: #000000;
     }
 
     .footer__redes {
@@ -1405,7 +1419,7 @@ ul {
 
 
     .header {
-        background-color: black;
+        background-color: #000000;
         width: 100%;
         height: 100%;
         padding: 5% 0%;
@@ -1413,14 +1427,14 @@ ul {
 
 
     .header h1 {
-        color: white;
+        color: #ffffff;
         font-family: baloo;
         font-size: 100px;
         text-align: center;
     }
 
     .header p {
-        color: white;
+        color: #ffffff;
         font-family: roboto;
         font-size: 45px;
         text-align: center;
@@ -1489,7 +1503,7 @@ ul {
 
     .suscripcion h3 {
         width: 100%;
-        background-color: orange;
+        background-color: #ffa500;
         font-family: baloo;
         font-size: 30px;
         text-align: center;
@@ -1516,7 +1530,7 @@ ul {
         width: 100%;
         height: 100%;
         background-color: #c13131;
-        color: white;
+        color: #ffffff;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -1538,7 +1552,7 @@ ul {
     }
 
     .banner__button button {
-        background-color: wheat;
+        background-color: #f5deb3;
         font-family: roboto;
         font-size: 20px;
         padding: 5px;
@@ -1555,7 +1569,7 @@ ul {
         justify-content: space-around;
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: #000000;
     }
 
     .footer__redes {
