@@ -101,12 +101,6 @@ span {
     justify-content: center;
 }
 
-.navbar>.container-fluid {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: center;
-}
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
@@ -131,16 +125,22 @@ span {
     gap: 30px;
     align-items: center;
     padding: 5% 0%;
+    transition: 1s;
 }
 
 .marca {
     width: 20%;
     object-fit: cover;
     padding: 10px;
+
 }
 
 .marca img {
     width: 90%;
+}
+
+.marca img:hover {
+    transform: scale(1, 1.50);
 }
 
 /*SECCION DE SUSCRIPCION*/
@@ -356,12 +356,14 @@ span {
     font-family: baloo;
     font-size: 16px;
     align-items: center;
+    transition: 1s;
 }
 
 .card h6 {
     font-family: roboto;
     font-size: 25px;
 }
+
 
 /*SOBRE NOSOTROS*/
 
@@ -411,6 +413,13 @@ span {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.productos-linea img:hover {
+    filter: grayscale(0);
+    transform: scale(1, 1.05);
 }
 
 .productos-linea {
@@ -492,14 +501,13 @@ span {
     }
 
     .navbar-toggler {
-        height: 20px;
+        height: 25px;
         background-color: #fefaf9;
-        border: none;
-        border-radius: 20px;
+        border-radius: 5px;
     }
 
     .navbar-toggler-icon {
-        width: 12px;
+        width: 17px;
         background-position: top;
     }
 
@@ -1637,6 +1645,13 @@ span {
 
     .card img {
         width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand {
+        display: none;
     }
 }
 
