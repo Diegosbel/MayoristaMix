@@ -356,13 +356,13 @@ span {
     font-family: baloo;
     font-size: 16px;
     align-items: center;
-    transition: 1s;
 }
 
 .card h6 {
     font-family: roboto;
     font-size: 25px;
 }
+
 
 
 /*SOBRE NOSOTROS*/
@@ -923,10 +923,10 @@ span {
     }
 
     .navbar-toggler {
-        height: 20px;
+        height: 25px;
         background-color: #fefaf9;
         border: none;
-        border-radius: 25px;
+        border-radius: 5px;
     }
 
     .navbar-toggler-icon {
@@ -1336,7 +1336,7 @@ span {
         height: 30px;
         background-color: #fefaf9;
         border: none;
-        border-radius: 15px;
+        border-radius: 5px;
     }
 
     .navbar-toggler-icon {
@@ -1636,6 +1636,7 @@ span {
         font-family: baloo;
         font-size: 16px;
         align-items: center;
+        transition: 0.5s;
     }
 
     .card h6 {
@@ -1646,6 +1647,11 @@ span {
     .card img {
         width: 100%;
     }
+
+    .card:hover {
+        box-shadow: 5px 5px 5px 5px #4d4c4c;
+}
+
 }
 
 
