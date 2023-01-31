@@ -1,0 +1,23 @@
+@font-face {
+    font-family: baloo;
+    src: url(../assets/Baloo2-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../assets/Roboto-Black.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lista-de-paginas {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

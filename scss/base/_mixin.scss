@@ -1,0 +1,21 @@
+@mixin flex ($dis, $dir, $wrap, $gap, $justy ) {
+    display: $dis;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    gap: $gap;
+    justify-content: $justy;
+}
+
+
+@mixin dimension ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+
+@mixin texto ($font, $size, $color, $posicion) {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    text-align: $posicion;
+}
