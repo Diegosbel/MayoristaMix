@@ -1,83 +1,99 @@
 @media only screen and (min-width: 320px) {
 
-    .nav-item {
-        font-family: $font-primary;
-        font-size: 18px;
-        font-weight: 600;
+    .navbar {
+
+        .navbar-brand {
+            font-family: $font-second;
+            font-size: 15px;
+            color: #fff;
+        }
+
+
+        .navbar-toggler {
+            height: 25px;
+            background-color: #fefaf9;
+            border-radius: 5px;
+        }
+
+        .navbar-toggler-icon {
+            width: 17px;
+            background-position: top;
+        }
+
+
+        .offcanvas-header h2 {
+            font-size: 20px;
+        }
+
+        .offcanvas-body {
+            justify-content: center;
+
+            .navbar-nav {
+                gap: 20px;
+
+
+                .nav-item {
+                    font-family: $font-primary;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+
     }
 
-    .navbar-brand {
-        font-family: $font-second;
-        font-size: 15px;
-        color: #fff;
-    }
 
     .header {
         background-color: #000000;
         width: 100%;
         height: 25vh;
         padding-top: 15%;
+
+
+
+        h1 {
+            color: #ffffff;
+            font-family: $font-primary;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        p {
+            color: #ffffff;
+            font-family: $font-second;
+            font-size: 20px;
+            text-align: center;
+        }
     }
-
-
-    .header h1 {
-        color: #ffffff;
-        font-family: $font-primary;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .header p {
-        color: #ffffff;
-        font-family: $font-second;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    span {
-        color: $color-primary;
-    }
-
-    .navbar-toggler {
-        height: 25px;
-        background-color: #fefaf9;
-        border-radius: 5px;
-    }
-
-    .navbar-toggler-icon {
-        width: 17px;
-        background-position: top;
-    }
-
-    .navbar-nav {
-        gap: 20px;
-    }
-
 
 
     /* SECCION MARCAS */
 
 
-    .nuestras-marcas h2 {
-        font-family: $font-primary;
-        font-size: 24px;
-        text-align: center;
-        padding-top: 10%;
-    }
+    .nuestras-marcas {
 
-    .marcas {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 5fr);
-        grid-template-rows: auto;
-        gap: 3px;
-        padding: 5% 10%;
-    }
+        h2 {
+            font-family: $font-primary;
+            font-size: 24px;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .marcas {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 5fr);
+            grid-template-rows: auto;
+            gap: 3px;
+            padding: 5% 10%;
 
 
-    .marca img {
-        width: 100px;
+            img {
+                width: 100px;
+            }
+        }
+
     }
 
 
@@ -86,67 +102,79 @@
 
 
     .suscripcion {
-        display: flex;
-        flex-direction: column;
         width: 100%;
+        margin-bottom: 3%;
+
+
+        h3 {
+            width: 100%;
+            height: 100px;
+            background-color: #ffa500;
+            font-family: $font-primary;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 5px;
+            padding-top: 20px;
+        }
+
+        .banner {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding-bottom: 10px;
+
+
+            img {
+                width: 100%;
+                height: 33%;
+                object-fit: cover;
+            }
+
+            .banner__form {
+                width: 100%;
+                height: 100%;
+                background-color: #c13131;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 20px;
+                gap: 10px;
+
+
+                input {
+                    padding: 2px;
+                    font-family: $font-primary;
+                    border-radius: 20px;
+                }
+
+                .banner__button {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 5px;
+
+                    button {
+                        background-color: #f5deb3;
+                        font-family: $font-second;
+                        font-size: 20px;
+                        padding: 5px;
+                        border-radius: 20px;
+                        ;
+                    }
+                }
+            }
+        }
+
     }
 
-    .suscripcion h3 {
-        width: 100%;
-        height: 100px;
-        background-color: #ffa500;
-        font-family: $font-primary;
-        font-size: 22px;
-        text-align: center;
-        margin-bottom: 5px;
-        padding-top: 20px;
-    }
 
-    .banner {
-        width: 100%;
-        gap: 5px;
-        padding-bottom: 10px;
-    }
 
-    .banner img {
-        width: 100%;
-        height: 33%;
-        object-fit: cover;
-    }
 
-    .banner__form {
-        width: 100%;
-        height: 100%;
-        background-color: #c13131;
-        color: white;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-        gap: 10px;
-    }
 
-    .banner__form input {
-        padding: 5px;
-        font-family: $font-primary;
-        border-radius: 20px;
-    }
 
-    .banner__button {
-        display: flex;
-        justify-content: center;
-        padding-top: 5px;
-    }
-
-    .banner__button button {
-        background-color: #f5deb3;
-        font-family: $font-second;
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 20px;
-        ;
-    }
 
     .footer {
         width: 100%;
@@ -155,314 +183,340 @@
         flex-direction: column;
         justify-content: start;
         background-color: #000000;
+
+
+        .footer__redes {
+            margin: 3%;
+
+            h3 {
+                color: #fff;
+                font-family: $font-primary;
+                font-size: 20px;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            a {
+                color: $color-primary;
+                font-family: $font-primary;
+                font-size: 20px;
+
+
+            }
+        }
+
+
+        .footer__contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin: 3%;
+
+            h4 {
+                color: #fff;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            h5 {
+                color: #fff;
+                text-align: center;
+                font-family: $font-second;
+                font-size: 13px;
+            }
+        }
     }
 
-    .footer__redes {
-        margin: 3%;
-    }
-
-    .footer__redes h3 {
-        color: #fff;
-        font-family: $font-primary;
-        font-size: 20px;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    .footer__redes a {
-        color: $color-primary;
-        font-family: $font-primary;
-        font-size: 20px;
 
 
-    }
 
-    .footer__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        margin: 3%;
-    }
-
-    .footer__contenedor h4 {
-        color: #fff;
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .footer__contenedor h5 {
-        color: #fff;
-        text-align: center;
-        font-family: $font-second;
-        font-size: 13px;
-    }
 
 
 
     /*CONTACTOS*/
 
-    .main-contactos {
+    .main-contacto {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        .titulo-contacto {
+
+            h2 {
+                font-family: $font-primary;
+                font-size: 30px;
+                text-align: center;
+                padding-top: 3%;
+            }
+
+            p {
+                font-family: $font-second;
+                font-size: 16px;
+                text-align: center
+            }
+        }
+
+        .formulario {
+            font-family: $font-second;
+            font-size: 16px;
+            text-align: center;
+            background-color: #ff5500d4;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px;
+            margin: 2% 5% 5% 5%;
+            border-radius: 10px;
+
+
+            .formulario__contenido {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+
+                input {
+                    padding: 5px;
+                    font-family: $font-primary;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    resize: none;
+                    border-radius: 5px;
+                }
+
+                select {
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+
+            .button {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+
+                .button__ct {
+                    font-family: $font-second;
+                    font-size: 15px;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .Ubicacion {
+            h3 {
+                font-family: $font-primary;
+                font-size: 35px;
+                text-align: center;
+            }
+
+            iframe {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                height: 30vh;
+                margin: 5%;
+            }
+        }
     }
 
-    .titulo-contacto h1 {
-        font-family: $font-primary;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 3%;
-    }
-
-    .titulo-contacto p {
-        font-family: $font-second;
-        font-size: 16px;
-        text-align: center
-    }
-
-    .formulario {
-        font-family: $font-second;
-        font-size: 16px;
-        text-align: center;
-        background-color: #ff5500d4;
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 10px;
-        margin: 2% 5% 5% 5%;
-        border-radius: 10px;
-    }
-
-    .formulario__contenido {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .formulario__contenido input {
-        padding: 5px;
-        font-family: $font-primary;
-        border-radius: 5px;
-    }
-
-    .formulario__contenido textarea {
-        resize: none;
-        border-radius: 5px;
-    }
-
-    .formulario__contenido select {
-        padding: 5px;
-        border-radius: 5px;
-    }
-
-    .Ubicacion h3 {
-        font-family: $font-primary;
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .Ubicacion iframe {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        height: 30vh;
-        margin: 5%;
-    }
-
-    .button {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .button__ct {
-        font-family: $font-second;
-        font-size: 15px;
-        padding: 5px;
-        border-radius: 10px;
-    }
 
 
     /*SOBRE NOSOTROS*/
 
-    .main-nosotros h1 {
-        font-family: $font-primary;
-        font-size: 35px;
-        text-align: center;
-        margin: 3%;
-    }
-
-    .nosotros {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 10px;
-        padding-bottom: 5%
-    }
-
-    .nosotros img {
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-    }
-
-    .nosotros p {
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        font-family: $font-primary;
-        font-size: 16px;
-        text-align: center
-    }
-
-
-    .nuestra-empresa {
-        @include flex (flex, row, wrap, 10px, space-around);
-    
-    
-        .areas1 {
-            @include dimension (200px, 300px);
+    .main-nosotros {
+        h2 {
+            font-family: $font-primary;
+            font-size: 35px;
+            text-align: center;
+            margin: 3%;
         }
-    
-        img {
+
+        .nosotros {
             width: 100%;
-            height: 80%;
-            object-fit: cover
+            height: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
+
+            padding-bottom: 5%;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 0%;
+            }
+
+            p {
+                width: 100%;
+                height: 100%;
+                margin: 0%;
+                font-family: $font-primary;
+                font-size: 16px;
+                text-align: center
+            }
         }
-    
-        h3 {
-            @include texto ($font-primary, 18px, #fff, center);
-            background-color: $color-primary;
+
+        .nuestra-empresa {
+            @include flex (flex, row, wrap, 10px, space-around);
+
+
+            .areas1 {
+                @include dimension (200px, 300px);
+            }
+
+            img {
+                width: 100%;
+                height: 80%;
+                object-fit: cover
+            }
+
+            h3 {
+                @include texto ($font-primary, 18px, #fff, center);
+                background-color: $color-primary;
+            }
+
+            .areas2 {
+                @include dimension (200px, 300px);
+            }
+
+
+            .areas3 {
+                @include dimension (200px, 300px);
+            }
+
         }
-    
-        .areas2 {
-            @include dimension (200px, 300px);
-        }
-    
-    
-        .areas3 {
-            @include dimension (200px, 300px);
-        }
-    
     }
+
 
     /* PRODUCTOS */
 
     .main-productos {
         margin: 0% 3%;
+
+        h3 {
+            font-family: $font-primary;
+            font-size: 23px;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        .productos-linea {
+            min-height: 100%;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "producto1 producto2 producto2 producto2 producto2 producto4 producto4"
+                "producto1 producto3 producto3 producto5 producto5 producto4 producto4";
+            gap: 5px;
+            margin: 0 auto;
+            padding: 3% 0%;
+
+            .p1 {
+                grid-area: producto2;
+            }
+
+            .p2 {
+                grid-area: producto1;
+            }
+
+            .p3 {
+                grid-area: producto3;
+            }
+
+            .p4 {
+                grid-area: producto4;
+            }
+
+            .p5 {
+                grid-area: producto5;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
     }
 
-    .main-productos h3 {
-        font-family: $font-primary;
-        font-size: 23px;
-        text-align: center;
-        padding-top: 5%;
-    }
 
-    .productos-linea img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .productos-linea {
-        min-height: 100%;
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "producto1 producto2 producto2 producto2 producto2 producto4 producto4"
-            "producto1 producto3 producto3 producto5 producto5 producto4 producto4";
-        gap: 5px;
-        margin: 0 auto;
-        padding: 3% 0%;
-    }
-
-    .p1 {
-        grid-area: producto2;
-    }
-
-    .p2 {
-        grid-area: producto1;
-    }
-
-    .p3 {
-        grid-area: producto3;
-    }
-
-    .p4 {
-        grid-area: producto4;
-    }
-
-    .p5 {
-        grid-area: producto5;
-    }
 
     /*OFERTAS*/
 
 
     .card {
+        width: 60%;
         text-align: center;
         font-family: $font-primary;
         font-size: 16px;
         align-items: center;
-    }
+        margin-left: 20%;
 
-    .card h6 {
-        font-family: $font-second;
-        font-size: 18px;
-    }
+        h3 {
+            font-family: $font-second;
+            font-size: 16px;
+        }
 
-    .card img {
-        width: 70%;
-    }
+        h4 {
+            font-family: $font-second;
+            font-size: 16px;
+        }
 
-}
-
-
-@media only screen and (min-width: 350px) {
-
-    .banner__form {
-        width: 100%;
-        height: 100%;
-        background-color: #c13131;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-        gap: 10px;
+        img {
+            width: 70%;
+        }
     }
 
 
 }
+
+
 
 
 @media only screen and (min-width: 480px) {
 
-    .nav-item {
-        font-family: $font-primary;
-        font-size: 22px;
-        font-weight: 600;
-    }
+    .navbar {
 
-    .navbar-brand {
-        font-family: $font-second;
-        font-size: 20px;
-        color: #fff;
+        .navbar-brand {
+            font-size: 20px;
+        }
+
+        .offcanvas-header h2 {
+            font-size: 25px;
+        }
+
+        .offcanvas-body {
+            justify-content: center;
+
+            .navbar-nav {
+                gap: 20px;
+
+
+                .nav-item {
+                    font-family: $font-primary;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+
     }
 
     .header {
@@ -470,571 +524,509 @@
         width: 100%;
         height: 100%;
         padding: 5%;
-    }
 
+        h1 {
+            color: #ffffff;
+            font-family: $font-primary;
+            font-size: 60px;
+            text-align: center;
+        }
 
-    .header h1 {
-        color: #ffffff;
-        font-family: $font-primary;
-        font-size: 60px;
-        text-align: center;
-    }
-
-    .header p {
-        color: #ffffff;
-        font-family: $font-second;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    span {
-        color: $color-primary;
-    }
-
-    .navbar-toggler {
-        height: 25px;
-        background-color: #fefaf9;
-        border: none;
-        border-radius: 5px;
-    }
-
-    .navbar-toggler-icon {
-        width: 15px;
-        background-position: top;
+        p {
+            color: #ffffff;
+            font-family: $font-second;
+            font-size: 30px;
+            text-align: center;
+        }
     }
 
 
     /* SECCION MARCAS */
 
-    .nuestras-marcas h2 {
-        font-family: $font-primary;
-        font-size: 35px;
-        text-align: center;
-        padding-top: 5%;
-    }
+    .nuestras-marcas {
 
-    .marcas {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        align-items: center;
-        padding: 5% 0%;
-    }
+        h2 {
+            font-family: $font-primary;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 10%;
+        }
 
-    .marca {
-        width: 90%;
-        object-fit: cover;
-        padding: 10px 20px;
-    }
+        .marcas {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 5fr);
+            grid-template-rows: auto;
+            gap: 3px;
+            padding: 5% 10%;
 
-    .marca img {
-        width: 90%;
-        padding-left: 40px;
+            img {
+                width: 130px;
+            }
+        }
     }
 
     /*SECCION DE SUSCRIPCION*/
 
     .suscripcion {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-    }
+        margin-bottom: 3%;
 
-    .suscripcion h3 {
-        width: 100%;
-        background-color: #ffa500;
-        font-family: $font-primary;
-        font-size: 26px;
-        text-align: center;
-        margin-bottom: 5px;
-        padding-top: 10px
-    }
 
-    .banner {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        padding-bottom: 20px;
-    }
+        h3 {
+            width: 100%;
+            height: 100px;
+            background-color: #ffa500;
+            font-family: $font-primary;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 5px;
+            padding-top: 20px;
+        }
 
-    .banner img {
-        width: 100%;
-        height: 90%;
-        object-fit: cover;
-    }
+        .banner {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding-bottom: 10px;
 
-    .banner__form {
-        width: 100%;
-        height: 80%;
-        background-color: #c13131;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        gap: 10px;
-    }
 
-    .banner__form input {
-        padding: 10px;
-        font-family: $font-primary;
-        border-radius: 20px;
-    }
+            img {
+                width: 100%;
+                height: 33%;
+                object-fit: cover;
+            }
 
-    .banner__button {
-        display: flex;
-        justify-content: center;
-        padding-top: 5px;
-    }
+            .banner__form {
+                width: 100%;
+                height: 80%;
+                background-color: #c13131;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                gap: 10px;
 
-    .banner__button button {
-        background-color: #f5deb3;
-        font-family: $font-second;
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 20px;
-        ;
+
+                input {
+                    padding: 2px;
+                    font-family: $font-primary;
+                    border-radius: 20px;
+                }
+
+                .banner__button {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 5px;
+
+                    button {
+                        background-color: #f5deb3;
+                        font-family: $font-second;
+                        font-size: 20px;
+                        padding: 5px;
+                        border-radius: 20px;
+                        ;
+                    }
+                }
+            }
+        }
+
     }
 
 
     /*PIE DE PAGINA*/
 
     .footer {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: 100%;
-        background-color: #000000;
-    }
-
-    .footer__redes {
-        margin: 3%;
-    }
-
-    .footer__redes h3 {
-        color: #fff;
-        font-family: $font-primary;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .footer__redes a {
-        color: $color-primary;
-        font-family: $font-primary;
-        font-size: 20px;
-    }
-
-    .footer__contenedor {
+        height: 40vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 15px;
-        margin: 3%;
-    }
+        justify-content: start;
+        background-color: #000000;
 
-    .footer__contenedor h4 {
-        color: #fff;
-        text-align: center;
-        font-size: 45px;
-    }
 
-    .footer__contenedor h5 {
-        color: #fff;
-        text-align: center;
-        font-family: $font-second;
-        font-size: 15px;
+        .footer__redes {
+            margin: 3%;
+
+            h3 {
+                color: #fff;
+                font-family: $font-primary;
+                font-size: 25px;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            a {
+                color: $color-primary;
+                font-family: $font-primary;
+                font-size: 20px;
+
+
+            }
+        }
+
+
+        .footer__contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin: 3%;
+
+            h4 {
+                color: #fff;
+                text-align: center;
+                font-size: 45px;
+            }
+
+            h5 {
+                color: #fff;
+                text-align: center;
+                font-family: $font-second;
+                font-size: 13px;
+            }
+        }
     }
 
     /*CONTACTOS*/
 
-    .main-contactos {
+    .main-contacto {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        .titulo-contacto {
+
+            h2 {
+                font-family: $font-primary;
+                font-size: 35px;
+                text-align: center;
+                padding-top: 3%;
+            }
+
+            p {
+                font-family: $font-second;
+                font-size: 22px;
+                text-align: center
+            }
+        }
+
+        .formulario {
+            font-family: $font-second;
+            font-size: 16px;
+            text-align: center;
+            background-color: #ff5500d4;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px;
+            margin: 2% 5% 5% 5%;
+            border-radius: 5px;
+
+
+            .formulario__contenido {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+
+                input {
+                    padding: 5px;
+                    font-family: $font-primary;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    resize: none;
+                    border-radius: 5px;
+                }
+
+                select {
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+
+            .button {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+
+                .button__ct {
+                    font-family: $font-second;
+                    font-size: 15px;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .Ubicacion {
+            h3 {
+                font-family: $font-primary;
+                font-size: 35px;
+                text-align: center;
+            }
+
+            iframe {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                height: 30vh;
+                margin: 5%;
+            }
+        }
     }
 
-    .titulo-contacto h1 {
-        font-family: $font-second;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 5%;
-    }
-
-    .titulo-contacto p {
-        font-family: $font-second;
-        font-size: 22px;
-        text-align: center;
-        padding-top: 3%;
-        ;
-    }
-
-    .formulario {
-        font-family: $font-second;
-        font-size: 16px;
-        text-align: center;
-        background-color: #ff5500d4;
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 20px;
-        margin: 2% 5% 5% 5%;
-        border-radius: 5px;
-    }
-
-    .formulario__contenido {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .formulario__contenido input {
-        padding: 5px;
-        font-family: $font-primary;
-        border-radius: 5px;
-    }
-
-    .formulario__contenido textarea {
-        resize: none;
-        border-radius: 5px;
-    }
-
-    .formulario__contenido select {
-        padding: 5px;
-        border-radius: 5px;
-    }
-
-    .Ubicacion h3 {
-        font-family: $font-primary;
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .Ubicacion iframe {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        height: 30vh;
-        margin: 5%;
-    }
-
-    .button {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .button__ct {
-        font-family: $font-second;
-        font-size: 16px;
-        padding: 5px;
-        border-radius: 5px;
-    }
 
 
     /*SOBRE NOSOTROS*/
 
-    .main-nosotros h1 {
-        font-family: $font-primary;
-        font-size: 35px;
-        text-align: center;
-        margin: 3%;
-    }
-
-    .nosotros {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 10px;
-        padding-bottom: 5%;
-    }
-
-    .nosotros img {
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-    }
-
-    .nosotros p {
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        font-family: $font-primary;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .nuestra-empresa {
-
-        .areas1 {
-            @include dimension (300px, 400px);
+    .main-nosotros {
+        h2 {
+            font-family: $font-primary;
+            font-size: 35px;
+            text-align: center;
+            margin: 3%;
         }
-    
-        img {
+
+        .nosotros {
             width: 100%;
-            height: 80%;
-            object-fit: cover
-        }
-    
-        h3 {
-            @include texto ($font-primary, 23px, #fff, center);
-            background-color: $color-primary;
-        }
-    
-        .areas2 {
-            @include dimension (300px, 400px);
-        }
-    
-    
-        .areas3 {
-            @include dimension (300px, 400px);
-        }
-    
-    }
+            height: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
 
+            padding-bottom: 5%;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 0%;
+            }
+
+            p {
+                width: 100%;
+                height: 100%;
+                margin: 0%;
+                font-family: $font-primary;
+                font-size: 20px;
+                text-align: center
+            }
+        }
+
+        .nuestra-empresa {
+            @include flex (flex, row, wrap, 10px, space-around);
+
+
+            .areas1 {
+                @include dimension (200px, 400px);
+            }
+
+            img {
+                width: 100%;
+                height: 80%;
+                object-fit: cover
+            }
+
+            h3 {
+                @include texto ($font-primary, 18px, #fff, center);
+                background-color: $color-primary;
+            }
+
+            .areas2 {
+                @include dimension (200px, 400px);
+            }
+
+
+            .areas3 {
+                @include dimension (200px, 400px);
+            }
+
+        }
+    }
 
     /* PRODUCTOS */
 
+
     .main-productos {
-        margin: 0% 5%;
-    }
+        margin: 0% 3%;
 
-    .main-productos h3 {
-        font-family: $font-primary;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 5%;
+        h3 {
+            font-family: $font-primary;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 5%;
+        }
     }
-
-    .productos-linea img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-
-    .productos-linea {
-        min-height: 100%;
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "producto1 producto2 producto2 producto2 producto2 producto4 producto4"
-            "producto1 producto3 producto3 producto5 producto5 producto4 producto4";
-        gap: 5px;
-        margin: 0 auto;
-        padding: 3% 0%;
-    }
-
-    .p1 {
-        grid-area: producto2;
-    }
-
-    .p2 {
-        grid-area: producto1;
-    }
-
-    .p3 {
-        grid-area: producto3;
-    }
-
-    .p4 {
-        grid-area: producto4;
-    }
-
-    .p5 {
-        grid-area: producto5;
-    }
-
 
 
     /*OFERTAS*/
 
 
     .card {
+        width: 80%;
         text-align: center;
         font-family: $font-primary;
-        font-size: 18px;
+        font-size: 16px;
         align-items: center;
+        margin-left: 10%;
+
+        h3 {
+            font-family: $font-second;
+            font-size: 18px;
+        }
+
+        h4 {
+            font-family: $font-second;
+            font-size: 18px;
+        }
+
+        img {
+            width: 50%;
+        }
     }
 
-    .card h6 {
-        font-family: $font-second;
-        font-size: 20px;
-    }
 
-    .card img {
-        width: 60%;
-    }
 }
-
-
-
-
 
 
 @media only screen and (min-width: 600px) {
 
-    .nav-item {
-        font-family: $font-primary;
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-
-    .navbar-brand {
-        font-family: $font-second;
-        font-size: 25px;
-        color: #fff;
-    }
 
 
     .header {
         background-color: #000000;
         width: 100%;
         height: 100%;
-    }
+        padding: 5%;
 
+        h1 {
+            color: #ffffff;
+            font-family: $font-primary;
+            font-size: 60px;
+            text-align: center;
+        }
 
-    .header h1 {
-        color: #ffffff;
-        font-family: $font-primary;
-        font-size: 85px;
-        text-align: center;
-    }
-
-    .header p {
-        color: #ffffff;
-        font-family: $font-second;
-        font-size: 35px;
-        text-align: center;
-    }
-
-    span {
-        color: $color-primary;
-    }
-
-    .navbar-toggler {
-        height: 30px;
-        background-color: #fefaf9;
-        border: none;
-        border-radius: 5px;
-    }
-
-    .navbar-toggler-icon {
-        width: 20px;
-        background-position: top;
+        p {
+            color: #ffffff;
+            font-family: $font-second;
+            font-size: 30px;
+            text-align: center;
+        }
     }
 
 
     /* SECCION MARCAS */
 
-    .nuestras-marcas h2 {
-        font-family: $font-primary;
-        font-size: 35px;
-        text-align: center;
-        padding-top: 5%;
-    }
+    .nuestras-marcas {
+        h2 {
+            font-family: $font-primary;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 10%;
+        }
 
-    .marcas {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        align-items: center;
-        padding: 5% 0%;
-    }
+        .marcas {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: center;
+            padding: 5% 0%;
 
-    .marca {
-        width: 90%;
-        object-fit: cover;
-        padding: 10px;
-    }
+            img {
+                width: 130px;
+            }
 
-    .marca img {
-        width: 90%;
+        }
     }
 
     /*SECCION DE SUSCRIPCION*/
 
     .suscripcion {
-        display: flex;
-        flex-wrap: wrap;
         width: 100%;
-    }
+        margin-bottom: 3%;
 
-    .suscripcion h3 {
-        width: 100%;
-        height: 100%;
-        background-color: #ffa500;
-        font-family: $font-primary;
-        font-size: 25px;
-        text-align: center;
-        margin-bottom: 5px;
-        padding-top: 0%;
-    }
 
-    .banner {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
+        h3 {
+            width: 100%;
+            height: 100%;
+            background-color: #ffa500;
+            font-family: baloo;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 5px;
+            padding-top: 0%;
+        }
 
-    .banner img {
-        width: 100%;
-        height: 80%;
-        object-fit: cover;
-    }
+        .banner {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-bottom: 10px;
 
-    .banner__form {
-        width: 100%;
-        height: 80%;
-        background-color: #c13131;
-        color: #ffffff;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        padding: 5px;
-        gap: 10px;
-    }
 
-    .banner__form input {
-        padding: 10px;
-        font-family: $font-primary;
-        border-radius: 5px;
-    }
+            img {
+                width: 100%;
+                height: 33%;
+                object-fit: cover;
+                padding-top: 5px;
+            }
 
-    .banner__button {
-        display: flex;
-        justify-content: center;
-        padding-top: 5px;
-    }
+            .banner__form {
+                width: 100%;
+                height: 80%;
+                background-color: #c13131;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                gap: 10px;
 
-    .banner__button button {
-        background-color: #f5deb3;
-        font-family: $font-second;
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 5px;
-        ;
+
+                input {
+                    padding: 6px;
+                    font-family: $font-primary;
+                    border-radius: 20px;
+                }
+
+                .banner__button {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 5px;
+
+                    button {
+                        background-color: #f5deb3;
+                        font-family: $font-second;
+                        font-size: 20px;
+                        padding: 5px;
+                        border-radius: 20px;
+                        ;
+                    }
+                }
+            }
+        }
+
     }
 
 
@@ -1046,236 +1038,150 @@
         width: 100%;
         height: 100%;
         background-color: #000000;
+
+
+        .footer__redes {
+            margin: 3%;
+
+            h3 {
+                color: #fff;
+                font-family: $font-primary;
+                font-size: 30px;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            a {
+                color: $color-primary;
+                font-family: $font-primary;
+                font-size: 20px;
+
+
+            }
+        }
+
+
+        .footer__contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin: 3%;
+
+            h4 {
+                color: #fff;
+                text-align: center;
+                font-size: 45px;
+            }
+
+            h5 {
+                color: #fff;
+                text-align: center;
+                font-family: $font-second;
+                font-size: 13px;
+            }
+        }
     }
-
-    .footer__redes {
-        margin: 3%;
-    }
-
-    .footer__redes h3 {
-        color: #fff;
-        font-family: $font-primary;
-        font-size: 25px;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-
-    .footer__redes a {
-        color: $color-primary;
-        font-family: $font-primary;
-        font-size: 25px;
-    }
-
-    .footer__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        margin: 3%;
-    }
-
-    .footer__contenedor h4 {
-        color: #fff;
-        text-align: center;
-        font-size: 45px;
-    }
-
-    .footer__contenedor h5 {
-        color: #fff;
-        text-align: center;
-        font-family: $font-second;
-        font-size: 15px;
-    }
-
-
-    /*CONTACTOS*/
-
-    .main-contactos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .titulo-contacto h1 {
-        font-family: $font-primary;
-        font-size: 40px;
-        text-align: center;
-        margin: 3%;
-    }
-
-    .titulo-contacto p {
-        font-family: $font-second;
-        font-size: 26px;
-        text-align: center
-    }
-
-    .formulario {
-        font-family: $font-second;
-        font-size: 16px;
-        text-align: center;
-        background-color: #ff5500d4;
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 20px;
-        margin: 2% 5% 5% 5%;
-        border-radius: 10px;
-    }
-
-    .formulario__contenido {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .formulario__contenido input {
-        padding: 5px;
-        font-family: $font-primary;
-        border-radius: 5px;
-    }
-
-    .formulario__contenido textarea {
-        resize: none;
-        border-radius: 5px;
-    }
-
-    .formulario__contenido select {
-        padding: 5px;
-        border-radius: 5px;
-    }
-
-    .Ubicacion h3 {
-        font-family: $font-primary;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .Ubicacion iframe {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        height: 30vh;
-        margin: 5%;
-    }
-
-    .button {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .button__ct {
-        font-family: $font-second;
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 10px;
-    }
-
 
     /*SOBRE NOSOTROS*/
 
-    .main-nosotros h1 {
-        font-family: $font-primary;
-        font-size: 40px;
-        text-align: center;
-        margin: 3%;
-    }
-
-    .nosotros {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 10px;
-        padding-bottom: 5%;
-    }
-
-    .nosotros img {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-    }
-
-    .nosotros p {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        font-family: $font-primary;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .nuestra-empresa {
-
-        .areas1 {
-            @include dimension (400px, 500px);
+    .main-nosotros {
+        h2 {
+            font-family: $font-primary;
+            font-size: 35px;
+            text-align: center;
+            margin: 3%;
         }
-    
-        img {
+
+        .nosotros {
             width: 100%;
-            height: 80%;
-            object-fit: cover
+            height: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
+
+            padding-bottom: 5%;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 0%;
+            }
+
+            p {
+                width: 100%;
+                height: 100%;
+                margin: 0%;
+                font-family: $font-primary;
+                font-size: 20px;
+                text-align: center
+            }
         }
-    
-        h3 {
-            @include texto ($font-primary, 23px, #fff, center);
-            background-color: $color-primary;
+
+        .nuestra-empresa {
+            @include flex (flex, row, wrap, 10px, space-around);
+
+
+            .areas1 {
+                @include dimension (300px, 500px);
+            }
+
+            img {
+                width: 100%;
+                height: 80%;
+                object-fit: cover
+            }
+
+            h3 {
+                @include texto ($font-primary, 18px, #fff, center);
+                background-color: $color-primary;
+            }
+
+            .areas2 {
+                @include dimension (300px, 500px);
+            }
+
+
+            .areas3 {
+                @include dimension (300px, 500px);
+            }
+
         }
-    
-        .areas2 {
-            @include dimension (400px, 500px);
-        }
-    
-    
-        .areas3 {
-            @include dimension (400px, 500px);
-        }
-    
     }
 
-
-    /* PRODUCTOS */
-
-    .main-productos h3 {
-        font-family: $font-primary;
-        font-size: 35px;
-        text-align: center;
-        padding-top: 5%;
-    }
 
     /*OFERTAS*/
 
 
     .card {
+        width: 100%;
         text-align: center;
         font-family: $font-primary;
         font-size: 16px;
         align-items: center;
-        transition: 0.5s;
+        margin-left: 0;
+
+
+        h3 {
+            font-family: $font-second;
+            font-size: 18px;
+        }
+
+        h4 {
+            font-family: $font-second;
+            font-size: 18px;
+        }
+
+        img {
+            width: 100%;
+        }
     }
 
-    .card h6 {
-        font-family: $font-second;
-        font-size: 20px;
-    }
 
-    .card img {
-        width: 100%;
-    }
-
-    .card:hover {
-        box-shadow: 5px 5px 5px 5px #4d4c4c;
 }
 
-}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -1302,36 +1208,25 @@
 @media only screen and (min-width: 1024px) {
 
 
-    .nav-item {
-        font-family: $font-primary;
-        font-size: 28px;
-        font-weight: 600;
-    }
+    // NAVBAR
 
-    .navbar-brand {
-        font-family: $font-second;
-        font-size: 30px;
-        color: #fff;
-    }
+    .navbar {
 
-    .navbar-toggler {
-        height: 30px;
-        background-color: #fefaf9;
-        border: none;
-        border-radius: 20px;
-    }
+        .offcanvas-body {
+            justify-content: center;
 
-    .navbar-toggler-icon {
-        width: 25px;
-        background-position: top;
-    }
+            .navbar-nav {
+                gap: 40px;
 
-    .navbar-nav {
-        gap: 20px;
-    }
 
-    .offcanvas-body {
-        justify-content: center;
+                .nav-item {
+                    font-family: $font-primary;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+            }
+        }
+
     }
 
     /* HEADER */
@@ -1342,125 +1237,130 @@
         width: 100%;
         height: 100%;
         padding: 5% 0%;
-    }
 
 
-    .header h1 {
-        color: #ffffff;
-        font-family: $font-primary;
-        font-size: 100px;
-        text-align: center;
-    }
+        h1 {
+            color: #ffffff;
+            font-family: $font-primary;
+            font-size: 100px;
+            text-align: center;
+        }
 
-    .header p {
-        color: #ffffff;
-        font-family: $font-second;
-        font-size: 45px;
-        text-align: center;
-    }
-
-    span {
-        color: $color-primary;
+        p {
+            color: #ffffff;
+            font-family: $font-second;
+            font-size: 45px;
+            text-align: center;
+        }
     }
 
 
 
     /* SECCION MARCAS */
 
-    .nuestras-marcas h2 {
+    .nuestras-marcas {
+        h2 {
         font-family: $font-primary;
         font-size: 50px;
         text-align: center;
         padding-top: 5%;
+
+        .marcas {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            padding: 5% 0%;
+    
+    
+            .marca {
+                width: 20%;
+                object-fit: cover;
+                padding: 10px;
+        
+                img {
+                    width: 90%;
+                }
+            }
+        }
     }
 
-    .marcas {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        align-items: center;
-        padding: 5% 0%;
-    }
 
-    .marca {
-        width: 20%;
-        object-fit: cover;
-        padding: 10px;
     }
-
-    .marca img {
-        width: 90%;
-    }
-
     /*SECCION DE SUSCRIPCION*/
 
     .suscripcion {
-        display: flex;
-        flex-wrap: wrap;
         width: 100%;
-    }
+        margin-bottom: 1%;
 
-    .suscripcion h3 {
-        width: 100%;
-        background-color: #ffa500;
-        font-family: $font-primary;
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
 
-    .banner {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        padding-bottom: 5%;
-    }
+        h3 {
+            width: 100%;
+            height: 40%;
+            background-color: #ffa500;
+            font-family: $font-primary;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            padding-top: 0;
+        }
 
-    .banner img {
-        width: 70%;
-        height: 80%;
-        object-fit: cover;
-    }
+        .banner {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding-bottom: 5%;
 
-    .banner__form {
-        width: 100%;
-        height: 100%;
-        background-color: #c13131;
-        color: #ffffff;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-        gap: 10px;
-    }
 
-    .banner__form input {
-        padding: 10px;
-        font-family: $font-primary;
-        border-radius: 5px;
-    }
+            img {
+                width: 70%;
+                height: 80%;
+                object-fit: cover
+            }
 
-    .banner__button {
-        display: flex;
-        justify-content: center;
-        padding-top: 5px;
-    }
+            .banner__form {
+                width: 100%;
+                height: 99%;
+                background-color: #c13131;
+                color: #ffffff;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+                margin-top: 5px;
+                gap: 25px;
 
-    .banner__button button {
-        background-color: #f5deb3;
-        font-family: $font-second;
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 5px;
-        ;
-    }
 
+                input {
+                    padding: 10px;
+                    font-family: $font-primary;
+                    border-radius: 10px;
+                }
+
+                .banner__button {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 5px;
+
+                    button {
+                        background-color: #f5deb3;
+                        font-family: $font-second;
+                        font-size: 20px;
+                        padding: 5px;
+                        border-radius: 14px;
+                        ;
+                    }
+                }
+            }
+        }
+
+    }
 
     /*PIE DE PAGINA*/
 
@@ -1471,301 +1371,367 @@
         width: 100%;
         height: 100%;
         background-color: #000000;
-    }
 
-    .footer__redes {
-        margin: 3%;
-    }
 
-    .footer__redes h3 {
-        color: #fff;
-        font-family: $font-primary;
-        font-size: 30px;
-    }
+        .footer__redes {
+            margin: 3%;
 
-    .footer__redes a {
-        color: $color-primary;
-        font-family: $font-primary;
-        font-size: 20px;
-    }
+            h3 {
+                color: #fff;
+                font-family: $font-primary;
+                font-size: 30px;
+                text-align: center;
+                padding-top: 10px;
+            }
 
-    .footer__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        margin: 3%;
-    }
+            a {
+                color: $color-primary;
+                font-family: $font-primary;
+                font-size: 24px;
 
-    .footer__contenedor h4 {
-        color: #fff;
-        text-align: center;
-        font-size: 60px;
-    }
 
-    .footer__contenedor h5 {
-        color: #fff;
-        text-align: center;
-        font-family: $font-second;
+            }
+        }
+
+
+        .footer__contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin: 3%;
+
+            h4 {
+                color: #fff;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            h5 {
+                color: #fff;
+                text-align: center;
+                font-family: $font-second;
+                font-size: 13px;
+            }
+        }
     }
 
 
     /*CONTACTOS*/
 
-    .main-contactos {
+    .main-contacto {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
 
-    .titulo-contacto h1 {
-        font-family: $font-primary;
-        font-size: 50px;
-        text-align: center;
-        padding-top: 3%;
-        margin-top: 0%;
-    }
+        .titulo-contacto {
 
-    .titulo-contacto p {
-        font-family: $font-second;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 0%;
-    }
+            h2 {
+                font-family: $font-primary;
+                font-size: 50px;
+                text-align: center;
+                padding-top: 3%;
+            }
 
-    .formulario {
-        font-family: $font-second;
-        font-size: 20px;
-        background-color: #ff5500d4;
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 20px;
-        margin: 2% 5% 5% 5%;
-        border-radius: 5px;
-    }
+            p {
+                font-family: $font-second;
+                font-size: 30px;
+                text-align: center;
+                padding-top: 30px;
+            }
+        }
 
-    .formulario__contenido {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
+        .formulario {
+            font-family: $font-second;
+            font-size: 20px;
+            background-color: #ff5500d4;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px;
+            margin: 2% 5% 5% 5%;
+            border-radius: 5px;
 
-    .formulario__contenido input {
-        padding: 5px;
-        font-family: $font-primary;
-        border-radius: 5px;
-    }
 
-    .formulario__contenido textarea {
-        resize: none;
-        border-radius: 5px;
-    }
+            .formulario__contenido {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
 
-    .formulario__contenido select {
-        padding: 5px;
-        border-radius: 5px;
-    }
 
-    .Ubicacion h3 {
-        font-family: $font-primary;
-        font-size: 50px;
-        text-align: center;
-    }
+                input {
+                    padding: 5px;
+                    font-family: $font-primary;
+                    border-radius: 5px;
+                }
 
-    .Ubicacion iframe {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        height: 30vh;
-        margin: 5%;
-    }
+                textarea {
+                    resize: none;
+                    border-radius: 5px;
+                }
 
-    .button {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        gap: 20px;
-    }
+                select {
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
 
-    .button__ct {
-        font-family: $font-second;
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 5px;
+            .button {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                gap: 20px;
+
+                .button__ct {
+                    font-family: $font-second;
+                    font-size: 20px;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .Ubicacion {
+            h3 {
+                font-family: $font-primary;
+                font-size: 45px;
+                text-align: center;
+            }
+        }
     }
 
 
     /*SOBRE NOSOTROS*/
 
-    .main-nosotros h1 {
-        font-family: $font-primary;
-        font-size: 40px;
-        text-align: center;
-        margin: 3%;
-    }
-
-    .nosotros {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        padding-bottom: 5%;
-    }
-
-    .nosotros img {
-        width: 50%;
-        height: 100%;
-        margin: 10px;
-    }
-
-    .nosotros p {
-        width: 50%;
-        height: 100%;
-        margin: 10px;
-        font-family: $font-primary;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .nuestra-empresa {    
-    
-        .areas1 {
-            @include dimension (400px, 900px);
+    .main-nosotros {
+        h2 {
+            font-family: $font-primary;
+            font-size: 40px;
+            text-align: center;
+            margin: 3%;
         }
-    
-        img {
+
+        .nosotros {
             width: 100%;
-            height: 80%;
-            object-fit: cover
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding-bottom: 5%;
+
+
+            img {
+                width: 50%;
+                height: 100%;
+                margin: 10px;
+            }
+
+            p {
+                width: 50%;
+                height: 100%;
+                margin: 10px;
+                font-family: $font-primary;
+                font-size: 20px;
+                text-align: center
+            }
         }
-    
-        h3 {
-            @include texto ($font-primary, 30px, #fff, center);
-            background-color: $color-primary;
+
+        .nuestra-empresa {
+            @include flex (flex, row, wrap, 10px, space-around);
+
+
+            .areas1 {
+                @include dimension (400px, 900px);
+            }
+
+            img {
+                width: 100%;
+                height: 80%;
+                object-fit: cover
+            }
+
+            h3 {
+                @include texto ($font-primary, 30px, #fff, center);
+                background-color: $color-primary;
+            }
+
+            .areas2 {
+                @include dimension (400px, 450px);
+            }
+
+
+            .areas3 {
+                @include dimension (400px, 450px);
+            }
+
         }
-    
-        .areas2 {
-            @include dimension (400px, 450px);
-        }
-    
-    
-        .areas3 {
-            @include dimension (400px, 450px);
-        }
-    
     }
 
 
     /* PRODUCTOS */
 
     .main-productos {
-        margin: 0% 5%;
+        margin: 0% 3%;
+
+        h3 {
+            font-family: $font-primary;
+            font-size: 55px;
+            text-align: center;
+            padding-top: 5%;
+        }
     }
-
-    .main-productos h3 {
-        font-family: $font-primary;
-        font-size: 55px;
-        text-align: center;
-        padding-top: 5%;
-    }
-
-    .productos-linea img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-
-    .productos-linea {
-        min-height: 100%;
-        max-width: 80%;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "producto1 producto2 producto2 producto2 producto2 producto4 producto4"
-            "producto1 producto3 producto3 producto5 producto5 producto4 producto4";
-        gap: 5px;
-        margin: 0 auto;
-        padding: 3% 0%;
-    }
-
-    .p1 {
-        grid-area: producto2;
-    }
-
-    .p2 {
-        grid-area: producto1;
-    }
-
-    .p3 {
-        grid-area: producto3;
-    }
-
-    .p4 {
-        grid-area: producto4;
-    }
-
-    .p5 {
-        grid-area: producto5;
-    }
-
-
 }
-
 
 
 
 @media only screen and (min-width: 1200px) {
-    .nosotros p {
-        width: 50%;
-        height: 100%;
-        margin: 10px;
-        font-family: $font-primary;
-        font-size: 27px;
-        text-align: center;
+
+// NAVBAR
+
+    .navbar {
+
+        .offcanvas-body {
+            justify-content: center;
+
+            .navbar-nav {
+                gap: 60px;
+
+
+                .nav-item {
+                    font-family: $font-primary;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+
     }
 
-    .navbar-nav {
-        gap: 60px;
-    }
 
-// sobre nosotros
 
-    .nuestra-empresa {
+    
+    // SECCION MARCAS
+    
+    .nuestras-marcas {
         
-        .areas1 {
-            @include dimension (400px, 1000px);
+        
+        h2 {
+            font-family: $font-primary;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 5%;
         }
-    
-        img {
+        
+        .marcas {
             width: 100%;
-            height: 80%;
-            object-fit: cover
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            padding: 5% 0%;
+            
+            
+            .marca {
+                width: 20%;
+                object-fit: cover;
+                padding: 10px;
+                
+                img {
+                    width: 180px;
+                }
+            }
         }
-    
-        h3 {
-            @include texto ($font-primary, 30px, #fff, center);
-            background-color: $color-primary;
-        }
-    
-        .areas2 {
-            @include dimension (400px, 600px);
-        }
-    
-    
-        .areas3 {
-            @include dimension (400px, 600px);
-        }
-    
     }
-}
+    
+    
+    
+    // PRODUCTOS
+
+    .main-productos {
+        margin: 0% 3%;
+
+        h3 {
+            font-family: $font-primary;
+            font-size: 55px;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        .productos-linea {
+            min-height: 100%;
+            max-width: 80%;
+        }
+    }
+    
+    // sobre nosotros
+    
+
+    .main-nosotros {
+
+        h2{
+        font-family: $font-primary;
+        font-size: 40px;
+        text-align: center;
+        margin: 3%;
+        }
+    
+        .nosotros {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap nowrap;
+            gap: 10px;
+            padding-bottom: 5%;
+        
+            img {
+                width: 50%;
+                height: 100%;
+                margin: 10px;
+            }
+        
+            p {
+                width: 50%;
+                height: 100%;
+                margin: 10px;
+                font-family: $font-primary;
+                font-size: 26px;
+                text-align: center;
+            }
+        }
+    
+        .nuestra-empresa {
+            @include flex (flex, row, wrap, 10px, space-around);
+        
+        
+            .areas1 {
+                @include dimension (400px, 1000px);
+            }
+        
+            img {
+                width: 100%;
+                height: 80%;
+                object-fit: cover
+            }
+        
+            h3 {
+                @include texto ($font-primary, 30px, #fff, center);
+                background-color: $color-primary;
+            }
+        
+            .areas2 {
+                @include dimension (400px, 600px);
+            }
+        
+        
+            .areas3 {
+                @include dimension (400px, 600px);
+            }
+        
+        }
+    }}
