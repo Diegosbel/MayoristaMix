@@ -1,10 +1,10 @@
 .main-nosotros {
 
-    h2{
-    font-family: $font-primary;
-    font-size: 40px;
-    text-align: center;
-    margin: 3%;
+    h2 {
+        font-family: $font-primary;
+        font-size: 40px;
+        text-align: center;
+        margin: 3%;
     }
 
     .nosotros {
@@ -14,13 +14,13 @@
         flex-wrap: wrap nowrap;
         gap: 10px;
         padding-bottom: 5%;
-    
+
         img {
             width: 50%;
             height: 100%;
             margin: 10px;
         }
-    
+
         p {
             width: 50%;
             height: 100%;
@@ -33,31 +33,31 @@
 
     .nuestra-empresa {
         @include flex (flex, row, wrap, 10px, space-around);
-    
-    
+
+
         .areas1 {
             @include dimension (400px, 1000px);
         }
-    
+
         img {
             width: 100%;
             height: 80%;
             object-fit: cover
         }
-    
+
         h3 {
             @include texto ($font-primary, 30px, #fff, center);
             background-color: $color-primary;
         }
-    
+
         .areas2 {
             @include dimension (400px, 600px);
         }
-    
-    
+
+
         .areas3 {
-            @include dimension (400px, 600px);
+            @extend .areas2;
         }
-    
+
     }
 }

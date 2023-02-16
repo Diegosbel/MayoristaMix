@@ -274,10 +274,7 @@ span {
     color: #fff;
     text-align: center;
     background-color: #ff4500; }
-  .main-nosotros .nuestra-empresa .areas2 {
-    height: 400px;
-    width: 600px; }
-  .main-nosotros .nuestra-empresa .areas3 {
+  .main-nosotros .nuestra-empresa .areas2, .main-nosotros .nuestra-empresa .areas3 {
     height: 400px;
     width: 600px; }
 
@@ -428,9 +425,10 @@ span {
         background-color: #c13131;
         color: white;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         padding: 20px;
         gap: 10px; }
         .suscripcion .banner .banner__form input {
@@ -590,10 +588,7 @@ span {
       color: #fff;
       text-align: center;
       background-color: #ff4500; }
-    .main-nosotros .nuestra-empresa .areas2 {
-      height: 200px;
-      width: 300px; }
-    .main-nosotros .nuestra-empresa .areas3 {
+    .main-nosotros .nuestra-empresa .areas2, .main-nosotros .nuestra-empresa .areas3 {
       height: 200px;
       width: 300px; }
   /* PRODUCTOS */
@@ -883,10 +878,7 @@ span {
       color: #fff;
       text-align: center;
       background-color: #ff4500; }
-    .main-nosotros .nuestra-empresa .areas2 {
-      height: 200px;
-      width: 400px; }
-    .main-nosotros .nuestra-empresa .areas3 {
+    .main-nosotros .nuestra-empresa .areas2, .main-nosotros .nuestra-empresa .areas3 {
       height: 200px;
       width: 400px; }
   /* PRODUCTOS */
@@ -1073,10 +1065,7 @@ span {
       color: #fff;
       text-align: center;
       background-color: #ff4500; }
-    .main-nosotros .nuestra-empresa .areas2 {
-      height: 300px;
-      width: 500px; }
-    .main-nosotros .nuestra-empresa .areas3 {
+    .main-nosotros .nuestra-empresa .areas2, .main-nosotros .nuestra-empresa .areas3 {
       height: 300px;
       width: 500px; }
   /*OFERTAS*/
@@ -1342,10 +1331,7 @@ span {
       color: #fff;
       text-align: center;
       background-color: #ff4500; }
-    .main-nosotros .nuestra-empresa .areas2 {
-      height: 400px;
-      width: 450px; }
-    .main-nosotros .nuestra-empresa .areas3 {
+    .main-nosotros .nuestra-empresa .areas2, .main-nosotros .nuestra-empresa .areas3 {
       height: 400px;
       width: 450px; }
   /* PRODUCTOS */
@@ -1437,9 +1423,6 @@ span {
       color: #fff;
       text-align: center;
       background-color: #ff4500; }
-    .main-nosotros .nuestra-empresa .areas2 {
-      height: 400px;
-      width: 600px; }
-    .main-nosotros .nuestra-empresa .areas3 {
+    .main-nosotros .nuestra-empresa .areas2, .main-nosotros .nuestra-empresa .areas3 {
       height: 400px;
       width: 600px; } }
