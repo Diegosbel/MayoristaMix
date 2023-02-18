@@ -51,7 +51,7 @@
         }
 
         .areas2 {
-            @include dimension (400px, 600px);
+            @extend %imagen;
         }
 
 
